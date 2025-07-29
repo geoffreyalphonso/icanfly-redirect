@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.KazukGames.ICanFlyBackToTheHome&hl=en";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = "https://apps.apple.com/lk/app/icanfly-flight-hotel-train/id6738917029";
+      } else {
+        // Optional fallback (could be a landing page or your company website)
+        window.location.href = "https://icanfly.lk";
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to the right app store...</p>
+  </body>
+</html>
